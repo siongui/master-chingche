@@ -2,8 +2,8 @@
 How to Develope
 ===============
 
-.. image:: https://travis-ci.org/siongui/master-chingche-collection.png?branch=master
-    :target: https://travis-ci.org/siongui/master-chingche-collection
+.. image:: https://travis-ci.org/siongui/master-chingche.png?branch=master
+    :target: https://travis-ci.org/siongui/master-chingche
 
 
 Development Tool: Pelican_ (static site generator written in Python)
