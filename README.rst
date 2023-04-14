@@ -2,13 +2,13 @@
 How to Develope
 ===============
 
-.. image:: https://travis-ci.org/siongui/master-chingche.png?branch=master
-    :target: https://travis-ci.org/siongui/master-chingche
+.. image:: https://github.com/siongui/master-chingche/workflows/Pelican%20site%20CI/badge.svg
+    :target: https://github.com/siongui/master-chingche/blob/master/.github/workflows/pelican.yml
 
 
 Development Tool: Pelican_ (static site generator written in Python)
 
-Development Environment: `Ubuntu 17.04`_
+Development Environment: `Ubuntu 22.04`_
 
 
 First-time Setup
@@ -61,32 +61,6 @@ First-time Setup
      $ make scss
 
 
-Auto-deploy by `Travis CI`_
----------------------------
-
-1. Sing up a `Travis CI`_ account. Go to your profile page and enable Travis CI
-   for the repository you want to build. (See `Getting started - Travis CI`_)
-
-2. delete global_ secure_ `environment variable`_ in
-   `.travis.yml <.travis.yml>`_.
-
-3. Go to your GitHub. Generate a `personal access token`_ in Personal Settings
-   (only **public_repo** privilege is enough).
-
-4. Install `Travis CI command line client`_ to encrypt token:
-
-   .. code-block:: bash
-
-     $ sudo apt-get install ruby ruby-dev
-     $ sudo gem install travis
-
-5. encrypt the token and add it to `.travis.yml <.travis.yml>`_:
-
-   .. code-block:: bash
-
-     $ travis encrypt GH_TOKEN=your_token --add -r YOUR_GITHUB_NAME/YOUR_REPO
-
-
 Daily Development
 -----------------
 
@@ -94,10 +68,8 @@ Daily Development
 
     # start edit and develope
     $ cd ~/dev/YOUR_REPO/
-    # If something changes, re-generate the website:
-    $ make html
-    # start dev server
-    $ make serve
+    # re-generate the website and start dev server
+    $ make
     # open your browser and preview the website at http://localhost:8000/
 
 
@@ -121,7 +93,7 @@ References
 .. [4] `GitHub Pages Deployment - Travis CI <https://docs.travis-ci.com/user/deployment/pages/>`_
 
 .. _Pelican: http://blog.getpelican.com/
-.. _Ubuntu 17.04: http://releases.ubuntu.com/17.04/
+.. _Ubuntu 22.04: https://releases.ubuntu.com/22.04/
 .. _UNLICENSE: http://unlicense.org/
 .. _git: https://git-scm.com/
 .. _pip: https://pypi.python.org/pypi/pip
